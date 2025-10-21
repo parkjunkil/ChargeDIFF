@@ -1,0 +1,21 @@
+# ref: https://github.com/yccyenchicheng/AutoSDF, https://github.com/CompVis/latent-diffusion/
+
+model:
+  params:
+    embed_dim: 3           # dimensionality of the embedding space (3 for 3D charge density) 
+    n_embed: 8192          # the number of codebook entries in the quantization space
+    ddconfig:
+      double_z: False      # if true, use a double latent vector representation
+      z_channels: 3        # the number of channels in the latent representation (z)
+      resolution: 32       # spatial resolution of the input data
+      in_channels: 1       # the number of input channels (1 for charge density)
+      out_ch: 1            # the number of output channels (1 for charge density)
+      ch: 64               # the number of filters in the convlutional layer
+      ch_mult: [1,2,4]     # controls the number of channels at each layer in encoder/decoder
+      num_res_blocks: 1    # the number of residual blocks
+      attn_resolutions: [] # resultions at which attention layers are applied (empty list -> no attention used)
+      dropout: 0.0         # probabilty of dropout used in the model
+
+lossconfig:
+  params:
+    codebook_weight: 1.0   # loss weight for codebook loss within the combined loss

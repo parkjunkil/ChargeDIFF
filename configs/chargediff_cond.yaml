@@ -1,0 +1,55 @@
+model:
+  params:
+    timesteps: 1000
+    time_emb_dim: 256
+
+    #beta scheduler for A
+    atom_scheduler:
+      beta_schedule_mode: cosine
+      beta_begin: 0.0001 
+      beta_end: 0.02 
+
+    #sigma scheduler for X
+    coordinate_scheduler:
+      sigma_begin: 0.005
+      sigma_end: 0.5
+
+    #beta scheduler for L
+    lattice_scheduler:
+      beta_schedule_mode: linear
+      beta_begin: 0.0001
+      beta_end: 0.02
+
+    #beta scheduler for C
+    charge_scheduler:
+      beta_schedule_mode: linear
+      beta_begin: 0.0001
+      beta_end: 0.02
+
+    #loss coeffs
+    cost_atom: 10.0
+    cost_coord: 1.0
+    cost_lattice: 1.0
+    cost_chgden: 1.0
+
+    #D3PM params
+    d3pm_hybrid_coeff: 0.01
+
+decoder:
+  params:
+    hidden_dim: 512        # hyperparameter for embedding vector dimension
+    latent_dim: 512        # hyperparameter for embedding vector dimension (twice that of unconditional case)
+    max_atoms: 100         # max atom number
+    chgden_resol: 8        # latent voxel dimension : 8x8x8x3
+    chgden_dim: 3          # latent voxel dimension : 8x8x8x3
+    expansion_dim: 256     # hyper parameter for embedding vector dimension
+    num_layers: 6          # number of message passing layers
+    act_fn: silu           # activation function within the decoder
+    dis_emb: sin           # Fourier transformation for node distance processing
+    num_freqs: 64          # regarding distance embedding between nodes
+    edge_style_atom: fc    # fc : fully-connected / knn : k-nearest neighbor
+    edge_style_charge: knn # fc : fully-connected / knn : k-nearest neighbor
+    pred_type: True        # set to True for de novo generation 
+    smooth: False          # regarding node embedding within the decoder
+    ln: True               # layer normalization
+    ip: True               # set to True to achieve invaraince
