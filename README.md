@@ -11,8 +11,9 @@ Code release for the paper [`Electronic structure-aware generation of inorganic 
 
 ChargeDIFF is the first diffusion model for inorganic materials that explicitly considers electronic structure during generation. Moving beyond conventional structure-only representations (atom types, atomic coordinates, lattice), ChargeDIFF incorporates charge density as a additaional modality within the generation process. ChargeDIFF exhibited superior generation performance for bot h unconditional and conditional generation tasks, and ablation study attribute these gains to the model's deeper understanding on materials' electronic behavior. Please visit [Project Page](Tobeupdated) for more details.
 
-<p align="center"><img src="docs/objects/uncond.gif">
-
+<p align="center">
+  <img src="docs/objects/uncond.gif"  width="500">
+</p>
 
 # Installation
 We recommend to build a [`conda`](https://www.anaconda.com/products/distribution) environment. You might need a different version of `cudatoolkit` depending on your GPU driver.
