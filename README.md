@@ -5,7 +5,9 @@
 
 Code release for the paper [`Electronic structure-aware generation of inorganic materials using generative models`](https://doi.org/10.1038/s41467-024-55390-9)
 
-<img src="docs/objects/Fig1.jpg" alt="Fig1" height="300">
+<p align="center">
+  <img src="docs/objects/Fig1.jpg" alt="Fig1" width="520">
+</p>
 
 c is a multi-modal conditional diffusion model for MOF generation. MOFFUSION showed exceptional generation performance compared to baseline models in terms of structure validity and property statistics. Diverse modalities of data, including numeric, categorical, text, and their combinations, were successfully handled for the conditional generation of MOFs. Notably, signed distance functions (SDFs) were used for the input representation of MOFs, marking their first implementation in the generation of porous materials (below). Please visit [Project Page](https://parkjunkil.github.io/MOFFUSION/) for more details.
 
