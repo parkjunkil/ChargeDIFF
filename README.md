@@ -1,18 +1,17 @@
 # ChargeDIFF
 
 [[`Paper`](Tobeupdated)]
-[[`Project Page`](https://parkjunkil.github.io/MOFFUSION/)]
+[[`Project Page`](Tobeupdated)]
 
 Code release for the paper [`Electronic structure-aware generation of inorganic materials using generative models`](https://doi.org/10.1038/s41467-024-55390-9)
 
 <p align="center">
-  <img src="docs/objects/Fig1.jpg" alt="Fig1" width="520">
+  <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
 </p>
 
-c is a multi-modal conditional diffusion model for MOF generation. MOFFUSION showed exceptional generation performance compared to baseline models in terms of structure validity and property statistics. Diverse modalities of data, including numeric, categorical, text, and their combinations, were successfully handled for the conditional generation of MOFs. Notably, signed distance functions (SDFs) were used for the input representation of MOFs, marking their first implementation in the generation of porous materials (below). Please visit [Project Page](https://parkjunkil.github.io/MOFFUSION/) for more details.
+ChargeDIFF is the first diffusion model for inorganic materials that explicitly considers electronic structure during generation. Moving beyond conventional structure-only representations (atom types, atomic coordinates, lattice), ChargeDIFF incorporates charge density as a additaional modality within the generation process. ChargeDIFF exhibited superior generation performance for bot h unconditional and conditional generation tasks, and ablation study attribute these gains to the model's deeper understanding on materials' electronic behavior. Please visit [Project Page](Tobeupdated) for more details.
 
-
-<p align="center"><img src=https://github.com/parkjunkil/MOFFUSION/assets/88761984/fdfa3198-0895-455b-9b86-cad24670a0d2>
+<p align="center"><img src="docs/objects/uncond.gif">
 
 
 # Installation
