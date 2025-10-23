@@ -16,7 +16,7 @@ ChargeDIFF is the first diffusion model for inorganic materials that explicitly 
 </p>
 
 # Installation
-We recommend to build a [`conda`](https://www.anaconda.com/products/distribution) environment. You might need a different version of `cudatoolkit` depending on your GPU driver.
+We recommend to build a [`conda`](https://www.anaconda.com/products/distribution) environment as follow. You might need a different version of `cudatoolkit` depending on your GPU driver.
 ```
 conda create -n chargediff python=3.10 -y && conda activate chargediff
 conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 -c pytorch -c nvidia
@@ -29,7 +29,7 @@ conda install pytorch3d -c pytorch3d
 pip install numpy=1.23.5
 ```
 
-# Demo
+# Test ChargeDIFF
 
 ## Download the pretrained weight
 
@@ -48,4 +48,15 @@ wget -O saved_ckpt/uncond.pth --user-agent="Mozilla/5.0" https://figshare.com/nd
 wget -O saved_ckpt/bandgap.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58917700
 wget -O saved_ckpt/magden.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58917709
 wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58917703
+```
+
+# Train ChargeDIFF
+
+## Download the pretrained weight
+
+First create a folder `./data` to download the Charge-MP-20 dataset.
+```
+mkdir data  # skip if already exists
+wget -O saved_ckpt/MP-20-Charge --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58917712
+
 ```
