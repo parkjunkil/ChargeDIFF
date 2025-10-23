@@ -59,3 +59,16 @@ mkdir data  # skip if already exists
 wget -O ./data/MP-20-Charge.tar --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58973161
 tar -xvf ./data/MP-20-Charge
 ```
+
+## Start training
+
+Run launcher files in create a folder `./launchers` to start running.
+```
+# unconditional model
+./launchers/train_chargediff_uncond.sh
+
+# conditional model
+./launchers/train_chargediff_bandgap.sh
+./launchers/train_chargediff_magnetic_density.sh
+./launchers/train_chargediff_density.sh
+```
