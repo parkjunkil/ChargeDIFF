@@ -18,13 +18,15 @@ ChargeDIFF is the first diffusion model for inorganic materials that explicitly 
 # Installation
 We recommend to build a [`conda`](https://www.anaconda.com/products/distribution) environment. You might need a different version of `cudatoolkit` depending on your GPU driver.
 ```
-conda create -n moffusion python=3.9.18 -y && conda activate moffusion
-conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
-conda install -y -c conda-forge cudatoolkit-dev  # this might take some time
+conda create -n chargediff python=3.10 -y && conda activate chargediff
+conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 -c pytorch -c nvidia
+pip install torch_scatter torch_sparse -f https://data.pyg.org/whl/torch-2.0.0+cu117.html
+pip install torch-geometric
+pip install h5py joblib termcolor scipy einops tqdm matplotlib opencv-python PyMCubes imageio trimesh omegaconf tensorboard notebook Pillow==9.5.0 py3Dmol ipywidgets transformers pormake p_tqdm pyxtal matminer
+conda install -y cudatoolkit=11.7 -c conda-forge
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install pytorch3d -c pytorch3d
-pip install h5py joblib termcolor scipy einops tqdm matplotlib opencv-python PyMCubes imageio trimesh omegaconf tensorboard notebook Pillow==9.5.0 py3Dmol ipywidgets transformers pormake seaborn
-pip install -U scikit-learn
+pip install numpy=1.23.5
 ```
 
 # Demo
