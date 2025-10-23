@@ -57,6 +57,6 @@ wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/n
 First create a folder `./data` to download the Charge-MP-20 dataset.
 ```
 mkdir data  # skip if already exists
-wget -O saved_ckpt/MP-20-Charge --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58917712
-
+wget -O ./data/MP-20-Charge.tar --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58973161
+tar -xvf ./data/MP-20-Charge
 ```
