@@ -28,12 +28,13 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install pytorch3d -c pytorch3d
 pip install numpy==1.23.5
 ```
+If there exist version discrepancy, try `conda install -c conda-forge mkl=2024.0.0 -y`
 
 # Test ChargeDIFF
 
 ## Download the pretrained weight
 
-First create a folder `./saved_ckpt` to save the pre-trained weights. Then download the pre-trained weights from the provided links and put them in the `./saved_ckpt` folder.
+Download the pre-trained weights from the provided links and store them in the `./saved_ckpt` folder.
 ```
 mkdir saved_ckpt  # skip if already exists
 
