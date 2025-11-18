@@ -24,7 +24,7 @@ def generate_structures(model, batch_size, num_batch, target, save_dir):
     opt.vq_cfg="./configs/vqvae.yaml"
     opt.vq_ckpt="./saved_ckpt/vqvae.pth"
         
-    assert model in [None, 'uncond', 'magnetic_density', 'bandgap', 'crystal_density'], \
+    assert model in [None, 'uncond', 'magnetic_density', 'bandgap'], \
     f"Unexpected model value '{model}' provided. Please choose from 'uncond', 'magnetic_density', 'bandgap', or 'crystal_density'."
 
         
@@ -62,15 +62,11 @@ def generate_structures(model, batch_size, num_batch, target, save_dir):
     
         if model == 'magnetic_density':
             opt.model='chargediff_magnetic_density'
-            opt.ckpt = './saved_ckpt/magden_64.pth'
+            opt.ckpt = './saved_ckpt/magden.pth'
         
         elif model == 'bandgap':
             opt.model='chargediff_bandgap'
-            opt.ckpt = './saved_ckpt/bandgap_64.pth'
-        
-        elif model == 'crystal_density':
-            opt.model='chargediff_density'
-            opt.ckpt = './saved_ckpt/density_64.pth'
+            opt.ckpt = './saved_ckpt/bandgap.pth'
             
         from datasets.base_dataset import CreateDataset
         opt.dataset_mode = 'MP-20-Charge'
