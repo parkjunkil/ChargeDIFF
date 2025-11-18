@@ -52,16 +52,16 @@ wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/n
 
 ## Generate Inorganic Structures
 
-Create a folder to store the generated structures. The following example assumes a case of storing structures in folder `./sample/test`.
+Create a folder to store the generated structures. The following example assumes a case of storing structures in folder `./sample`.
 ```
-mkdir ./sample/test
+mkdir ./sample
 
 # Unconditional Generation
-python generate.py --model=uncond --batch-size=50 --num-batch=10 --save-dir=./sample/test
+python generate.py --model=uncond --batch-size=50 --num-batch=10 --save-dir=./sample
 
 # Conditional Generation
-python generate.py --model=bandgap --batch-size=50 --num-batch=10 --save-dir=./sample/test --target=4.0
-python generate.py --model=magnetic_density --batch-size=50 --num-batch=10 --save-dir=./sample/test --target=0.15
+python generate.py --model=bandgap --batch-size=50 --num-batch=10 --save-dir=./sample --target=4.0
+python generate.py --model=magnetic_density --batch-size=50 --num-batch=10 --save-dir=./sample --target=0.15
 
 ```
 
