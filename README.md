@@ -8,7 +8,7 @@ Code release for the paper [`Integrating electronic structure into generative mo
 <p align="center">
   <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
 </p>
-ChargeDIFF is the first generative model for inorganic materials that explicitly considers electronic structure of materials. Moving beyond conventional structure-only representations (atom types, atomic coordinates, lattice), ChargeDIFF incorporates charge density as a additaional modality during the generation process. ChargeDIFF exhibited superior generation performance for bot h unconditional and conditional generation tasks, and ablation study attribute these gains to the model's deeper understanding on materials' electronic behavior. Please visit [`Project Page`](https://parkjunkil.github.io/ChargeDIFF/) for more details.
+ChargeDIFF is the first generative model for inorganic materials that explicitly considers electronic structure of materials. Moving beyond conventional structure-only representations (atom types, atomic coordinates, lattice), ChargeDIFF incorporates charge density as a additaional modality during the generation process. ChargeDIFF exhibited superior generation performance for bot h unconditional and conditional generation tasks, and ablation study attribute these gains to the model's deeper understanding on materials' electronic behavior. Please visit [Project Page](https://parkjunkil.github.io/ChargeDIFF/) for more details.
 
 <p align="center">
   <img src="docs/objects/uncond.gif"  width="250">
