@@ -26,7 +26,7 @@ pip install h5py joblib termcolor scipy einops tqdm matplotlib opencv-python PyM
 conda install -y cudatoolkit=11.7 -c conda-forge
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install pytorch3d -c pytorch3d
-pip install numpy=1.23.5
+pip install numpy==1.23.5
 ```
 
 # Test ChargeDIFF
