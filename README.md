@@ -3,7 +3,7 @@
 [[`Paper`](Tobeupdated)]
 [[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
-Code release for the paper [`Electronic structure-aware generation of inorganic materials using generative models`](https://doi.org/10.1038/s41467-024-55390-9)
+Code release for the paper [`Integrating electronic structure into generative modeling of inorganic materials`](https://doi.org/10.1038/s41467-024-55390-9)
 
 <p align="center">
   <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
@@ -72,3 +72,28 @@ Run launcher files in create a folder `./launchers` to start running.
 ./launchers/train_chargediff_magnetic_density.sh
 ./launchers/train_chargediff_density.sh
 ```
+
+
+# <a name="citation"></a> Citation
+
+If you find this code helpful, please consider citing:
+
+1. arxiv version
+```BibTeX
+@article{,
+  author={Park, Junkil and Choi, Junyoung and Jung, Yousung},
+  title={Integrating electronic structure into generative modeling of inorganic materials},
+  Journal={arxiv},
+  year={2025},
+}
+```
+
+# Acknowledgement
+
+This project was funded by National Research Foundation of Korea under grant No.RS-2024-00464386.
+
+# License
+This project is licensed under the MIT License. Please check the [LICENSE](https://github.com/parkjunkil/c/blob/main/LICENSE) file for more information.
+
+
+
