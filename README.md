@@ -72,6 +72,9 @@ Run launcher files in create a folder `./launchers` to start running.
 ./launchers/train_chargediff_bandgap.sh
 ./launchers/train_chargediff_magnetic_density.sh
 ./launchers/train_chargediff_density.sh
+
+# vqvae model (optional)
+./launchers/train_vqvae.sh
 ```
 
 
