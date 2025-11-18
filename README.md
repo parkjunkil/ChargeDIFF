@@ -1,7 +1,7 @@
 # ChargeDIFF
 
 [[`Paper`](Tobeupdated)]
-[[`Project Page`](Tobeupdated)]
+[[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
 Code release for the paper [`Electronic structure-aware generation of inorganic materials using generative models`](https://doi.org/10.1038/s41467-024-55390-9)
 
