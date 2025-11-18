@@ -175,7 +175,7 @@
     <div class="hero-body">
       <img src="./docs/objects/Fig1.jpg">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">MOFFUSION Architecture
+        <span class="dnerf">ChargeDIFF Geneartion Process
       </h2>
     </div>
   </div>
@@ -186,27 +186,26 @@
 
     <div class="columns is-centered">
 
-      <!-- SDF -->
+      <!-- VQVAE -->
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Latent Diffusion using VQ-VAE</h2>
           <p>
-            Within <i>MOFFUSION</i>, signed distance functions (SDFs) were used as an input representation for MOFs, marking their first implementation in porous materials generation. 
+            ChargeDIFF improves the efficiency of the structure generation process by using a latent diffusion approach on charge density. To this end, a VQ-VAE maps high-resolution charge density voxels into a latent space. 
           </p>
-          <img src="./docs/objects/sdf.jpg">
+          <img src="./docs/objects/VQVAE.jpg">
         </div>
       </div>
-      <!--/ SDF. -->
 
-      <!-- MOF-SDF. -->
+      <!-- Message Passing -->
       <div class="column">
         <h2 class="title is-3">Cross-modal Message Passing</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              SDFs successfully capture the geomtric features of MOFs, and accurately represent the intrinsic pore morphology of various MOFs.
+              In the denoising network of ChargeDIFF, information is exchanged between atom nodes and charge density probe nodes through cross-modal message passing. This allows the charge density to be treated in a mutual manner together with other structural components.
             </p>
-            <img src="./docs/objects/mof-sdf.gif">
+            <img src="./docs/objects/cross-modal_message_passing.jpg">
           </div>
         </div>
       </div>
