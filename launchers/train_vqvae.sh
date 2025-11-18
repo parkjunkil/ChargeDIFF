@@ -22,7 +22,7 @@ fi
 
 ### hyper params ###
 lr=1e-4
-batch_size=4
+batch_size=64
 ####################
 
 ### model stuff ###
