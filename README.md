@@ -79,7 +79,7 @@ First create a folder `./data` to download the Charge-MP-20 dataset.
 ```
 mkdir data  # skip if already exists
 wget -O ./data/MP-20-Charge.tar --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58973161
-tar -xvf ./data/MP-20-Charge
+tar -xvf ./data/MP-20-Charge.tar
 ```
 
 ## Start training
