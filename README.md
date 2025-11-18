@@ -50,6 +50,25 @@ wget -O saved_ckpt/magden.pth  --user-agent="Mozilla/5.0" https://figshare.com/n
 wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/58917703
 ```
 
+## Generate Inorganic Structures
+
+Create a folder to store the generated structures. Let say we hope to store in `./sample/test`.
+```
+mkdir ./sample/test
+
+# Unconditional Generation
+python generate.py --model=uncond --batch-size=50 --num-batch=10 --save-dir=./sample/test
+
+# Conditional Generation
+python generate.py --model=bandgap --batch-size=50 --num-batch=10 --save-dir=./sample/test --target=4.0
+python generate.py --model=magnetic_density --batch-size=50 --num-batch=10 --save-dir=./sample/test --target=0.15
+
+```
+
+## Charge Density-based Inverse Design
+In the jupyter notebook file named `demo_chage_density_inpainting.ipynb`, charge density-based inverse design scheme for the generation of structures with low censity profile with 1D and 2D channels is described.
+
+
 # Train ChargeDIFF
 
 ## Download the pretrained weight
