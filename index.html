@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MOFFUSION GITHUB Page">
+        content="ChargeDIFF GITHUB Page">
   <meta name="keywords" content="MOFFUSION">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Multi-modal conditional diffusion model using signed distance functions for metal-organic frameworks generation</title>
+  <title>Integrating electronic structure into generative modeling of inorganic materials</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -88,20 +88,21 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Multi-modal conditioning for metal-organic frameworks generation using 3D modeling techniques</h1>
+          <h1 class="title is-1 publication-title">Integrating electronic structure into generative modeling of inorganic materials</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=rVGLAYIAAAAJ&hl=en&oi=ao">Junkil Park</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=rVGLAYIAAAAJ&hl=en&oi=ao">Junkil Park</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://qkqkfldis1.github.io/">Youhan Lee</a><sup>2</sup>,</span>
+              <a href="https://qkqkfldis1.github.io/">Junyoung Choi</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=OUoa6QgAAAAJ&hl=en&oi=ao">Jihan Kim</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=OUoa6QgAAAAJ&hl=en&oi=ao">Yousung Jung</a><sup>1,2,3</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Korea Advanced Institue of Science and Technology,</span>
-            <span class="author-block"><sup>2</sup>NVIDIA Corporation</span>
+            <span class="author-block"><sup>1</sup>Department of Chemical and Biological Engineering, Seoul National University</span>
+            <span class="author-block"><sup>2</sup>Institute of Engineering Research, Seoul National University</span>
+            <span class="author-block"><sup>3</sup>Institute of Chemical Processes, Seoul National University</span>
           </div>
           
           <div class="column has-text-centered">
@@ -151,14 +152,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           The design of porous materials with user-desired properties has been a great interest for the last few decades. However, the flexibility 
-            of target properties has been highly limited, and targeting multiple properties of diverse modalities simultaneously has been scarcely explored. 
-            Furthermore, although deep generative models have opened a new paradigm in materials generation, their incorporation into porous materials such 
-            as metal-organic frameworks (MOFs) has not been satisfactory due to their structural complexity. In this work, we introduce MOFFUSION, a latent 
-            diffusion model that addresses the aforementioned challenges. Signed distance functions (SDFs) were employed for the input representation of MOFs, 
-            marking their first usage in representing porous materials for generative models. Using the suitability of SDFs in describing complicated pore structures,
-            MOFFUSION exhibited exceptional generation performance, and demonstrated its versatile capability of conditional generation with handling diverse modalities of data, 
-            including numeric, categorical, text data, and their combinations.
+          Recent advances in generative models have introduced a new paradigm for the inverse design of inorganic materials, enabling the discovery of new crystalline structures 
+          with desired properties. . However, existing generative models focus solely on structural aspects of materials during generation, while overlooking the underlying electronic
+          behavior that fundamentally governs materials’ stability and functionality. In this work, we present ChargeDIFF, the first generative model for inorganic materials that 
+          explicitly incorporates electronic structure into the generation process. Specifically, ChargeDIFF leverages charge density, a direct spatial representation of a material’s 
+          electronic structure, as an additional modality for generation. ChargeDIFF demonstrates exceptional performance in both unconditional and conditional generation tasks compared 
+          to baseline models, with ablation studies revealing that this improvement is directly due to its ability to capture the material’s electronic structure during generation. 
+          Moreover, the ability to control charge density allows ChargeDIFF to introduce a novel inverse design method based on three-dimensional charge density, illustrating the potential 
+          to generate lithium-ion battery cathode materials with desired ion migration pathways, as further validated by physics-based simulations. By highlighting the importance of 
+          accounting for electronic characteristics during material generation, ChargeDIFF offers new possibilities in the generative design of stable and functional materials.
           </p>
         </div>
       </div>
