@@ -53,7 +53,7 @@ wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/n
 
 ## Generate Inorganic Structures
 
-Create a folder to store the generated structures. The following example assumes a case of storing structures in folder `./sample`.
+Create a folder to store the generated structures. The following example assumes a case of storing structures in the folder named `./sample`.
 For conditional generation, Charge-MP-20 data must be downloaded beforehand.
 ```
 mkdir ./sample
@@ -68,7 +68,7 @@ python generate.py --model=magnetic_density --batch-size=50 --num-batch=10 --sav
 ```
 
 ## Charge Density-based Inverse Design
-In the jupyter notebook file named `demo_chage_density_inpainting.ipynb`, charge density-based inverse design scheme for the generation of structures with low density profile with 1D and 2D channels is described. `chemsys.pth` must be downloaded before running.
+In the jupyter notebook file named `demo_chage_density_inpainting.ipynb`, charge density-based inverse design scheme for the generation of structures with low density profile with 1D and 2D channels is described. `chemsys.pth` must be downloaded before running so that conditioning on chemical system takes place at the same time.
 
 
 # Train ChargeDIFF
