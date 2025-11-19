@@ -88,7 +88,7 @@ tar -xvf MP-20-Charge.tar
 
 Run launcher files in create a folder `./launchers` to start running.
 ```
-(if not .sh files are not executable)
+(only if .sh files are not executable)
 chmod +x ./launchers/*.sh
 
 # unconditional model
