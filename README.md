@@ -3,7 +3,7 @@
 [[`Paper`](https://arxiv.org/abs/2511.14228)]
 [[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
-Code release for the paper [`Integrating electronic structure into generative modeling of inorganic materials`]()
+Code release for the paper [`Integrating electronic structure into generative modeling of inorganic materials`](https://arxiv.org/abs/2511.14228)
 
 <p align="center">
   <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
