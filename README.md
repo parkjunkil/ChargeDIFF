@@ -1,6 +1,6 @@
 # ChargeDIFF
 
-[[`Paper`](Tobeupdated)]
+[[`Paper`](https://arxiv.org/abs/2511.14228)]
 [[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
 Code release for the paper [`Integrating electronic structure into generative modeling of inorganic materials`]()
@@ -113,7 +113,7 @@ If you find this code helpful, please consider citing:
 @article{,
   author={Park, Junkil and Choi, Junyoung and Jung, Yousung},
   title={Integrating electronic structure into generative modeling of inorganic materials},
-  Journal={arxiv},
+  Journal={https://arxiv.org/abs/2511.14228},
   year={2025},
 }
 ```
