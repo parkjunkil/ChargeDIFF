@@ -28,7 +28,7 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install pytorch3d -c pytorch3d
 pip install numpy==1.23.5
 ```
-If there exist version discrepancy, try `conda install -c conda-forge mkl=2024.0.0 -y`
+(important) If there exist version discrepancy, try `conda install -c conda-forge mkl=2024.0.0 -y`
 
 # Test ChargeDIFF
 
@@ -54,7 +54,7 @@ wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/n
 ## Generate Inorganic Structures
 
 Create a folder to store the generated structures. The following example assumes a case of storing structures in the folder named `./sample`.
-For conditional generation, Charge-MP-20 data must be downloaded beforehand.
+For conditional generation, Charge-MP-20 data must be downloaded beforehand. This would generate .cif (structure-only file) and .vasp (structure + charge density) files, respectively.
 ```
 mkdir ./sample
 
