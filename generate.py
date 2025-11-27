@@ -25,7 +25,7 @@ def generate_structures(model, batch_size, num_batch, target, save_dir):
     opt.vq_cfg="./configs/vqvae.yaml"
     opt.vq_ckpt="./saved_ckpt/vqvae.pth"
         
-    assert model in [None, 'uncond', 'magnetic_density', 'bandgap', 'crystal_density], \
+    assert model in [None, 'uncond', 'magnetic_density', 'bandgap', 'crystal_density'], \
     f"Unexpected model value '{model}' provided. Please choose from 'uncond', 'magnetic_density', 'bandgap', or 'crystal density'"
 
         
@@ -71,7 +71,7 @@ def generate_structures(model, batch_size, num_batch, target, save_dir):
             opt.ckpt = './saved_ckpt/bandgap.pth'
             scaler = torch.load('./saved_ckpt/scaler_bandgap.pth')            
 
-        elif model == 'density':
+        elif model == 'crystal_density':
             opt.model='chargediff_density'
             opt.ckpt = './saved_ckpt/density.pth'
             scaler = torch.load('./saved_ckpt/scaler_density.pth')      
