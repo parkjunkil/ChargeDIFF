@@ -45,7 +45,7 @@ wget -O saved_ckpt/vqvae.pth  --user-agent="Mozilla/5.0" https://figshare.com/nd
 ## Unconditional model
 wget -O saved_ckpt/uncond.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880260
 
-## Conditional models (bandgap, magnetic density, chemical system)
+## Conditional models (bandgap, magnetic density, crystal_ density)
 wget -O saved_ckpt/bandgap.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880251
 wget -O saved_ckpt/magden.pth   --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880257
 wget -O saved_ckpt/density.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880248
