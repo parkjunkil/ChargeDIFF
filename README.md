@@ -39,16 +39,16 @@ Download the pre-trained weights from the provided links and store them in the `
 mkdir saved_ckpt  # skip if already exists
 
 # VQVAE's checkpoint
-wget -O saved_ckpt/vqvae.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59766239
+wget -O saved_ckpt/vqvae.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880245
 
 # ChargeDIFF's checkpoint
 ## Unconditional model
-wget -O saved_ckpt/uncond.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59766251
+wget -O saved_ckpt/uncond.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880260
 
 ## Conditional models (bandgap, magnetic density, chemical system)
-wget -O saved_ckpt/bandgap.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59766242
-wget -O saved_ckpt/magden.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59766248
-wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59766245
+wget -O saved_ckpt/bandgap.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880251
+wget -O saved_ckpt/magden.pth   --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880257
+wget -O saved_ckpt/density.pth  --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880248
 ```
 
 ## Generate Inorganic Structures
@@ -64,12 +64,15 @@ python generate.py --model=uncond --batch-size=50 --num-batch=10 --save-dir=./sa
 # Conditional Generation
 python generate.py --model=bandgap --batch-size=50 --num-batch=10 --save-dir=./sample --target=4.0
 python generate.py --model=magnetic_density --batch-size=50 --num-batch=10 --save-dir=./sample --target=0.15
-
+python generate.py --model=crystal_density --batch-size=50 --num-batch=10 --save-dir=./sample --target=15.0
 ```
 
 ## Charge Density-based Inverse Design
-In the jupyter notebook file named `demo_chage_density_inpainting.ipynb`, charge density-based inverse design scheme for the generation of structures with low density profile with 1D and 2D channels is described. `chemsys.pth` must be downloaded before running so that conditioning on chemical system takes place at the same time.
-
+In the jupyter notebook file named `demo_chage_density_inpainting.ipynb`, charge density-based inverse design scheme for the generation of structures with low density profile with 1D and 2D channels is described. 
+`chemsys.pth` must be downloaded before running so that conditioning on chemical system takes place at the same time.
+```
+wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/ndownloader/files/59880254
+```
 
 # Train ChargeDIFF
 
