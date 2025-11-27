@@ -54,7 +54,7 @@ wget -O saved_ckpt/chemsys.pth --user-agent="Mozilla/5.0" https://figshare.com/n
 ## Generate Inorganic Structures
 
 Create a folder to store the generated structures. The following example assumes a case of storing structures in the folder named `./sample`.
-For conditional generation, Charge-MP-20 data must be downloaded beforehand. This would generate .cif (structure-only file) and .vasp (structure + charge density) files, respectively.
+This would generate .cif (structure-only file) and .vasp (structure + charge density) files, respectively.
 ```
 mkdir ./sample
 
