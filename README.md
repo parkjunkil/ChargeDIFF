@@ -3,7 +3,7 @@
 [[`Paper`](https://arxiv.org/abs/2511.14228)]
 [[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
-Code release for the paper [`Learning electrons to generate materials`](https://arxiv.org/abs/2511.14228)
+Code release for the paper [`Learning electrons to generate materials (title updated from arXiv version)`](https://arxiv.org/abs/2511.14228)
 
 <p align="center">
   <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
