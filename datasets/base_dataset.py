@@ -31,7 +31,7 @@ class BaseDataset(data.Dataset):
 def CreateDataset(opt):
 
     cprint('[*] Data Processing Start', 'yellow')
-    cprint("[*] Could a take while if this is the first run", 'blue')
+    cprint("[*] Could take a while if this is the first run", 'blue')
      
     from datasets.chargediff_dataset import CHARGEDIFF_Dataset
     train_dataset = CHARGEDIFF_Dataset()
