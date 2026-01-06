@@ -54,7 +54,7 @@ wget -O saved_ckpt/density.pth  --user-agent="Mozilla/5.0" https://figshare.com/
 ## Generate Inorganic Structures
 
 Create a folder to store the generated structures. The following example assumes a case of storing structures in the folder named `./sample`.
-This would generate .cif (structure-only file) and .vasp (structure + charge density) files, respectively.
+This would generate .cif (structure-only file) and .vasp (structure + charge density) files, respectively. (Depends on the system size, this could take several seconds to minutes)
 ```
 mkdir ./sample
 
