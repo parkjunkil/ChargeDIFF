@@ -16,7 +16,7 @@ ChargeDIFF is the first generative model for inorganic materials that explicitly
 </p>
 
 # Installation
-We recommend to build a [`conda`](https://www.anaconda.com/products/distribution) environment as follow (Installation could take several minutes). You might need a different version of `cudatoolkit` depending on your GPU driver.
+We recommend to build a [`conda`](https://www.anaconda.com/products/distribution) environment as follow (could take several minutes). You might need a different version of `cudatoolkit` depending on your GPU driver.
 ```
 conda create -n chargediff python=3.10 -y && conda activate chargediff
 conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 -c pytorch -c nvidia
