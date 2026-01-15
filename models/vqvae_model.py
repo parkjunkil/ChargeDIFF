@@ -131,19 +131,17 @@ class VQVAEModel(BaseModel):
     
     # obtain loss for validation set
     def val_loss(self, val_dl):
-        
         tot_loss = 0
+ 
         self.switch_eval()
-        
         with torch.no_grad():
             for ix, val_data in tqdm(enumerate(val_dl), total=len(val_dl)):
                 self.set_input(val_data)
-                self.inference(val_data, should_render=False)
+                self.x_recon, self.qloss = self.vqvae(self.x, verbose=False)
                 loss, _ = self.loss_vq(self.qloss, self.x, self.x_recon)
                 tot_loss += loss
  
         self.switch_train()
-
         return tot_loss / len(val_dl)
 
     # obtain loss metrics during the evaluation phase
