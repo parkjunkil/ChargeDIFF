@@ -117,7 +117,7 @@ class VQVAEModel(BaseModel):
         self.switch_train()
 
     # iou is used as a metric to assess the performance of vq-vae
-    def test_iou(self, data, thres=0.0):
+    def test_iou(self, data, thres=0.5):
         """
             thres: threshold to consider a voxel to be free space or occupied space.
         """
@@ -147,7 +147,7 @@ class VQVAEModel(BaseModel):
         return tot_loss / len(val_dl)
 
     # obtain loss metrics during the evaluation phase
-    def eval_metrics(self, dataloader, thres=0.0, global_step=0):
+    def eval_metrics(self, dataloader, thres=0.5, global_step=0):
         self.switch_eval()
         iou_list = []
         with torch.no_grad():
