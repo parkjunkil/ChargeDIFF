@@ -469,7 +469,7 @@ class CHARGEDIFF_Model(BaseModel):
 
             # C
             alphas_c = self.beta_scheduler_C.alphas[t]
-            beta_c = self.beta_scheduler_C.betas[t-1]
+            beta_c = self.beta_scheduler_C.betas[t]
             alphas_cumprod_c = self.beta_scheduler_C.alphas_cumprod[t]
             sigmas_c = self.beta_scheduler_C.sigmas[t]
             coeff_0_c = 1.0 / torch.sqrt(alphas_c)
