@@ -3,7 +3,7 @@
 [[`Paper`](https://arxiv.org/abs/2511.14228)]
 [[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
-Code release for the paper [`Learning electrons to generate materials (title updated from arXiv version)`](https://arxiv.org/abs/2511.14228)
+Code release for the paper [`Generative modelling of inorganic materials with explicit electronic structure`](https://www.nature.com/articles/s41467-026-73985-2)
 
 <p align="center">
   <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
@@ -111,7 +111,17 @@ chmod +x ./launchers/*.sh
 
 If you find this code helpful, please consider citing:
 
-1. arxiv version
+1. Article
+```BibTeX
+@article{,
+  author={Park, Junkil and Choi, Junyoung and Jung, Yousung},
+  title={Generative modelling of inorganic materials with explicit electronic structure},
+  Journal={https://www.nature.com/articles/s41467-026-73985-2},
+  year={2026},
+}
+```
+
+3. arxiv version
 ```BibTeX
 @article{,
   author={Park, Junkil and Choi, Junyoung and Jung, Yousung},
