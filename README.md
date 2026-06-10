@@ -3,7 +3,7 @@
 [[`Paper`](https://arxiv.org/abs/2511.14228)]
 [[`Project Page`](https://parkjunkil.github.io/ChargeDIFF/)]
 
-Code release for the paper [`Generative modelling of inorganic materials with explicit electronic structure`](https://www.nature.com/articles/s41467-026-73985-2)
+Code release for the paper [`Generative modelling of inorganic materials with explicit electronic structure (Nat. Commun., 2026)`](https://www.nature.com/articles/s41467-026-73985-2)
 
 <p align="center">
   <img src="docs/objects/Fig1.jpg" alt="Fig1" width="700">
@@ -121,7 +121,7 @@ If you find this code helpful, please consider citing:
 }
 ```
 
-3. arxiv version
+2. arxiv version
 ```BibTeX
 @article{,
   author={Park, Junkil and Choi, Junyoung and Jung, Yousung},
